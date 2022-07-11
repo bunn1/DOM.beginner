@@ -37,6 +37,10 @@ revealBtn.addEventListener('click', function handleClick() {
     }
 })
 
+// Event Probagation 1 Event Capturing 2 Target 3 Event Bubbling
+
+
+
 
 
 
