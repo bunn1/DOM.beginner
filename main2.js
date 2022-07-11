@@ -1,42 +1,41 @@
-// Event Listener
+// Event Listener ------------------
 
 // element.addEventListener("click", function();
 
 const buttonTwo = document.querySelector('#btn-2');
 
-buttonTwo.addEventListener('click', function (){
+buttonTwo.addEventListener('click', function () {
 
-alert('I love Css');
+    alert('I love Css');
 
 });
 
-// MouseOver
+
+// MouseOver ----------------------------
 
 const newBackgroundColor = document.querySelector('.box-3');
 
-function changeBgColor(){
-    newBackgroundColor.style.backgroundColor ="red";
+function changeBgColor() {
+    newBackgroundColor.style.backgroundColor = "red";
 }
 newBackgroundColor.addEventListener('mouseover', changeBgColor);
 
-// Hide or Reveal Content
 
-const revealBtn = document.querySelector(".reveal-button");
+// Hide or Reveal Content --------------------
+
 const hiddenContent = document.querySelector(".hidden-content");
+const revealBtn = document.querySelector(".reveal-button");
 
-function revealContent() {
+revealBtn.addEventListener('click', function handleClick() {
+    if (hiddenContent.style.visibility == 'hidden') {
+        hiddenContent.style.visibility = "visible";
 
-    if (hiddenContent.classList.contains(".reveal-button")
-){ 
-    hiddenContent.classList.remove(".reveal-button")
-     }else{
-        hiddenContent.classList.add(".reveal-button")
- }
-}
-
-
-
-
+        revealBtn.textContent = "Hide div ";
+    }else{
+        hiddenContent.style.visibility = "hidden";
+        revealBtn.textContent ="Show div";
+    }
+})
 
 
 
