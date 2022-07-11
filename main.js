@@ -21,3 +21,16 @@
 // querySelectorAll
 // const container1= document.querySelectorAll("div");
 // console.log(container1)
+
+// Styling Elements
+// const title = document.querySelector("#main-heading");
+// title.style.color ="red";
+// console.log(title);
+
+
+// Style all listItems ---------------------------------------------------------------------------
+const listItems = document.querySelectorAll("list-items");
+for (let i = 0; i < listItems.length; i++) {
+    listItems[i].style.color ="blue";
+}
+console.log(listItems);
