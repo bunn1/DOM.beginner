@@ -29,8 +29,31 @@
 
 
 // Style all listItems ---------------------------------------------------------------------------
-const listItems = document.querySelectorAll("list-items");
-for (let i = 0; i < listItems.length; i++) {
-    listItems[i].style.color ="blue";
-}
-console.log(listItems);
+// const listItems = document.querySelectorAll(".list-items");
+// for (let i = 0; i < listItems.length; i++) {
+//     listItems[i].style.color ="blue";
+// }
+// console.log(listItems);
+
+// Creating Elements
+const ul = document.querySelector("ul");
+const li = document.createElement("li");
+
+// Adding Elements ---------------------------
+ul.append(li);
+li.innerText = "X-men";
+
+// Modifying the text ------------------------
+// const firstListItem = document.querySelector(".list-items");
+// console.log(firstListItem.innerText);
+// console.log(firstListItem.textContent);
+// console.log(firstListItem.innerHTML);
+
+// Modifying Attributes and Classes --------------------------
+// li.setAttribute("id", "main-heading");
+// li.removeAttribute("id");
+// const title = document.querySelector("#main-heading");
+// console.log(title.getAttribute("id"))
+
+li.classList.add("list-items");
+li.classList.remove("list-items");
