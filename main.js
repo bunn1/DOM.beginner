@@ -1,4 +1,4 @@
-// DOM Manipulation
+// DOM Manipulation -----------------------------
 
 
 // GetElementById()
@@ -22,7 +22,7 @@
 // const container1= document.querySelectorAll("div");
 // console.log(container1)
 
-// Styling Elements
+// Styling Elements --------------------------------
 // const title = document.querySelector("#main-heading");
 // title.style.color ="red";
 // console.log(title);
@@ -35,7 +35,7 @@
 // }
 // console.log(listItems);
 
-// Creating Elements
+// Creating Elements -----------------------------
 const ul = document.querySelector("ul");
 const li = document.createElement("li");
 
@@ -55,5 +55,17 @@ li.innerText = "X-men";
 // const title = document.querySelector("#main-heading");
 // console.log(title.getAttribute("id"))
 
+
 li.classList.add("list-items");
-li.classList.remove("list-items");
+// li.classList.remove("list-items");
+console.log(li.classList.contains("list-items"));
+
+// Remove Elements --------------------------------------------
+// li.remove();
+
+// Parent Node  --------------------------------
+let ulList = document.querySelector("ul")
+console.log(ul.parentNode);
+console.log(ul.parentElement);
+
+// 
