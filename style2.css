@@ -36,26 +36,25 @@
     padding: 10px 80px;
 }
 
-button{
-    font-size:20px;
-    margin:auto;
-    width:100px;
-    padding:10px;
-    border-radius:10px;
-    cursor:pointer;
-    border:2px solid;
+button {
+    font-size: 20px;
+    margin: auto;
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid;
     background: none;
     color: whitesmoke;
     display: block;
 }
 
-
-
-/*  */
+/* No coding --------------------------------------- */
 .containerTwo {
     margin-left: 250px;
-    width:30%;
+    width: 30%;
 }
+
 .outer {
     margin: auto;
     width: 50%;
@@ -64,10 +63,19 @@ button{
     margin: 50px auto;
     background-color: lightblue;
 }
+
 .inner {
     width: auto;
     height: 200px;
     margin: 50px 50px 0 50px;
-    background-color:lightcoral;
+    background-color: lightcoral;
     text-align: center;
+}
+/* ---------------------------------------------- */
+
+ul {
+    text-align: center;
+    list-style-type: none;
+    background-color: chocolate;
+    width: 300px;
 }
