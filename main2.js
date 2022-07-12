@@ -31,16 +31,25 @@ revealBtn.addEventListener('click', function handleClick() {
         hiddenContent.style.visibility = "visible";
 
         revealBtn.textContent = "Hide div ";
-    }else{
+    } else {
         hiddenContent.style.visibility = "hidden";
-        revealBtn.textContent ="Show div";
+        revealBtn.textContent = "Show div";
     }
 })
 
 // Event Probagation 1 Event Capturing 2 Target 3 Event Bubbling
 
+// Nothing on Probagation
 
+// Event Delegation
 
+document.querySelector("#football").addEventListener("click", function (e) {
+    console.log("football is clicked");
 
+    const target = e.target;
 
-
+    if (
+        target.matches("li")) {
+        target.style.backgroundColor = "lightgrey";
+    }
+})
