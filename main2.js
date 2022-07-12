@@ -42,6 +42,7 @@ revealBtn.addEventListener('click', function handleClick() {
 // Nothing on Probagation
 
 
+// Can copy code underneath several times or use the code on line 61 - 69 
 
 // document.querySelector("#football").addEventListener("click", function (e) {
 //     console.log("football is clicked");
@@ -58,7 +59,18 @@ revealBtn.addEventListener('click', function handleClick() {
 // Event Delegation
 
 document.querySelector("#sports").addEventListener("click", function (e) {
-    console.log(e.target.getAttribute("id") + "is clicked");
+    console.log(e.target.getAttribute("id") + " " + "is clicked");
 
+    const target = e.target;
+
+    if (target.matches("li")) {
+        target.style.backgroundColor = "ivory";
+    }
 })
 
+const sports = document.querySelector("#sports");
+const newSport = document.createElement("li");
+
+newSport.innerText ="rugby";
+newSport.setAttribute("id", "rugby");
+sports.appendChild(newSport)

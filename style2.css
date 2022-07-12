@@ -49,30 +49,6 @@ button {
     display: block;
 }
 
-/* No coding --------------------------------------- */
-.containerTwo {
-    margin-left: 250px;
-    width: 30%;
-}
-
-.outer {
-    margin: auto;
-    width: 50%;
-    width: 300px;
-    height: 300px;
-    margin: 50px auto;
-    background-color: lightblue;
-}
-
-.inner {
-    width: auto;
-    height: 200px;
-    margin: 50px 50px 0 50px;
-    background-color: lightcoral;
-    text-align: center;
-}
-/* ---------------------------------------------- */
-
 ul {
     text-align: center;
     list-style-type: none;
