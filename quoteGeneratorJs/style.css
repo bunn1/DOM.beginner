@@ -1,4 +1,9 @@
 body {
-background-image: url("../images/twinGalaxies.jpg");
-background-size: cover;
+    background-image: url("../images/twinGalaxies.jpg");
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    color: white;
 }
