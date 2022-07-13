@@ -33,6 +33,7 @@ revealBtn.addEventListener('click', function handleClick() {
         revealBtn.textContent = "Hide div ";
     } else {
         hiddenContent.style.visibility = "hidden";
+        
         revealBtn.textContent = "Show div";
     }
 })
