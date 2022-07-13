@@ -29,5 +29,8 @@ const quotes = [{
      is, 'What are you doing for others?'"`,
     person: `Martin Luther King Jr`
 
+},{
+    quote: `"Remember that not getting what you want is sometimes a wonderful stroke of luck."`,
+    person: `Dalai Lama`
 
 }]
