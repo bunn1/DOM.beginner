@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'lato', sans-serif;
 }
 
 body {
@@ -22,4 +23,52 @@ body {
     border-radius:10px;
     box-shadow: 0 0 3px black;
     transition: .5s;
+}
+#open-btn:hover { 
+    background-color:black;
+    color:white;
+}
+#modal{
+    background-color: white;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    width: 200px;
+    height: 100px;
+    padding:10px 20px;
+    border-radius: 8px;
+    font-size:1.5rem;
+    /* Get Here I am and the x on the same row horizontally */
+     
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* Center div modal to the middle instead of using flexbox or grid */
+    transform: translate(-50%, -50%);
+
+    animation-name: animatemodal;
+    animation-duration: .4s;
+}
+
+/*  Styling of the X */
+#close-btn{
+    font-size: 3rem;
+}
+
+#close-btn{
+    cursor: pointer;
+    font-size: 3rem;
+    color: #ff0000;
+}
+
+#modal-container{
+     display:none;
+     /* position: fixed; */
+     top: 0;
+     left: 0;
+     width: 100%;
+     height:100%;
+     z-index: 2;
+
 }
