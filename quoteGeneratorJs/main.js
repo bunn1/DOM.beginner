@@ -4,7 +4,6 @@ let btn = document.querySelector("#new-quote");
 let quote = document.querySelector(".quote");
 let person = document.querySelector(".person");
 
-
 const quotes = [{
 
     quote: `"Nothing in life is to be feared, it is only to be understood. 
@@ -32,5 +31,21 @@ const quotes = [{
 },{
     quote: `"Remember that not getting what you want is sometimes a wonderful stroke of luck."`,
     person: `Dalai Lama`
-
 }]
+
+
+// btn.addEventListener('click', function(){
+
+//     let random = Math.floor(Math.random() * quotes.length);
+         
+// })
+
+btn.addEventListener('click', function(){
+    
+    let random =[Math.floor(Math.random() * quotes.length)]
+
+  quote.innerText = quotes[random].quote;
+  person.innerText = quotes[random].person;
+})
+
+
