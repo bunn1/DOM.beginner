@@ -6,5 +6,8 @@ let quotes =[
     'The happiness of your life depends on the quality of your thoughts.” – Marcus Aurelius'
 ]
 
-let random = Math.floor(Math.random()) * quotes.length;
-console.log(random)
+function newQuote() { 
+    
+let random = Math.floor(Math.random() * (quotes.length));
+
+}
