@@ -7,7 +7,9 @@ let quotes =[
 ]
 
 function newQuote() { 
-    
+
 let random = Math.floor(Math.random() * (quotes.length));
+document.getElementById("quoteDisplay").innerHTML = quotes[random];
 
 }
+
