@@ -4,3 +4,8 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: url(../images/carina.nebula.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
