@@ -38,8 +38,8 @@ body {
     padding:10px 20px;
     border-radius: 8px;
     font-size:1.5rem;
+
     /* Get Here I am and the x on the same row horizontally */
-     
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -73,5 +73,19 @@ body {
      height:100%;
      /* Sit on top */
      z-index: 1;
+     background-color: 0,0,0, .2;
+}
 
+/* Modal animation Section */
+
+@keyframes animatemodal{
+    from{
+        top: -300px;
+        opacity: 0;
+    }
+
+    to{
+        top: 20%;
+        opacity: 1;
+    }
 }
