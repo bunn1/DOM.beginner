@@ -48,6 +48,10 @@ body {
 
     /* When you click on a question everything will scroll nice and smooth */
     transition: .5;
+}
 
+/* Javascript styling link - toggle the answer from the javascript*/
 
+.accordian .content-container.active .answer{
+    height: 150px;
 }
