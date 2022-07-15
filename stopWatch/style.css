@@ -26,19 +26,18 @@ align-items:center;
 
 .buttons{
     text-align: center;
+
 }
 
-button{
-margin: 0 10px;
-border: none;
-}
-
-button i {
-    font-size: 2rem;
-    padding: 10px;
-    color: #fff;
-    width: 50px;
+#startStopBtn{
+    padding: 20px 20px;
+    background-color: red;
     
+}
+
+#resetBtn{
+    padding: 20px 20px;
+    background-color: green;
 }
 
 #play{
