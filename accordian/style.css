@@ -55,3 +55,14 @@ body {
 .accordian .content-container.active .answer{
     height: 150px;
 }
+
+.accordian .content-container.active .question{
+    font-size: 18px;
+    transition: .5s;
+}
+
+.accordian .content-container.active .question::after{
+    content:"-";
+    font-size: 30px;
+    transition: .5s;
+}
