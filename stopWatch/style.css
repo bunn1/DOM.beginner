@@ -26,6 +26,8 @@ align-items:center;
 .buttons{
     text-align: center;
     margin-right: 30px;
+    cursor: pointer;
+    
 }
 #startStopBtn{
     padding: 20px 20px;
