@@ -1,9 +1,9 @@
 // Variable
 
-let accordian = document.getElementsByClassName('.content-container');
+let accordian = document.getElementsByClassName('content-container');
 
 // Access info in container - for loop
-for ( i = 0; i < accordian.length; i++) {
+for (let i = 0; i < accordian.length; i++) {
 
 //   Reference point all content-container / toggle = toggle 
 //   adding or removing a classname with the method active
@@ -12,4 +12,3 @@ for ( i = 0; i < accordian.length; i++) {
     })
 }
 
-console.log()
