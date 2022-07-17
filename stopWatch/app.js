@@ -66,9 +66,27 @@ startStopBtn.addEventListener("click", function(){
 
         if (timerStatus === "stopped") {
             timerInterval = window.setInterval(stopWatch, 1000)
+            document.getElementById("startStopBtn").innerText =
+            `id="pause">`;
+            timerStatus = "started";
+            // Timer stops - reverts to our play button
+        }else{
+            window.clearInterval(timerInterval);
+            document.getElementById("startStopBtn").innerHTML = 
+            `<i class="fa-solid fa-play" id="play"></i>`;
+            timerStatus = "stopped";
         }
 })
+resetBtn.addEventListener("click", function (){
 
+    // Clear timer interval
+    window.clearInterval(timerInterval);
+    seconds = 0;
+    minutes = 0;
+    hours = 0;
+
+    document.getElementById("timer").innerHTML = "00:00:00"
+})
 
 // Starts the stopWatch automatic
 // window.setInterval(stopWatch, 1000)
