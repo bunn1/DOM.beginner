@@ -1,5 +1,15 @@
 // Variables
 
-const addTask = document.getElementById("add-task");
+const btnAddTask = document.getElementById("btn-task");
 const taskContainer = document.getElementById("task-container");
-const inputTask = document.getElementById("input-task");
+const inputText = document.getElementById("input-text");
+
+
+
+function fun1(){
+    taskContainer.innerHTML = inputText.value;
+}
+
+btnAddTask.addEventListener("click", fun1);
+ 
+ 
