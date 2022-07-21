@@ -45,3 +45,34 @@ input{
     background-color: green;
     color: #fff;
 }
+
+#delete-Btn{
+    flex: 1;
+    transition: .3s;
+
+    font-size: 1.2rem;
+    padding: 5px;
+
+    background-color: #fff;
+    color: green;
+
+    border: green solid 2px;
+    border-radius: 10px;
+}
+
+#delete-Btn:hover{
+    background-color: green;
+    color: #fff;
+}
+
+
+
+#task-container{
+
+    width: 350px;
+    height: 50px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 0 0 0 20px;
+    margin-top: 20px;
+}
