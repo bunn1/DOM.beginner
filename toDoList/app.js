@@ -24,12 +24,13 @@ function clearContainerField() {
 taskContainer.addEventListener("click", () => {
     taskContainer.style.textDecoration = "line-through";
     taskContainer.style.textDecorationThickness = "4px";
-    taskContainer.style.textDecorationColor = "green";
+    taskContainer.style.textDecorationColor = "orange";
 
 
-    deleteBtn.addEventListener("click", (e) => {
-        deleteBtn.remove(e);
-        taskContainer.remove(e);
+    deleteBtn.addEventListener("click", (value) => {
+    
+        taskContainer.remove(value);
+        value.removChild(value);
 
     })
 })
