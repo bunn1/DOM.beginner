@@ -11,3 +11,28 @@ inp.addEventListener("keyup",function(event){
         addToDo();
     }
 })
+
+function addToDo(){
+    let value = inp.value;
+
+    if(value === "") // Checks if any string is not resent it will not print
+
+    return;
+
+    let element= document.createElement("li"); // Creating li element
+
+    element.innerText = value; // Giving value of the text into element
+
+    list.appendChild(element); // Appending at end
+
+    element.addEventListener("dbclick", function(){ // Dbclick - delete element
+        element.remove("list");
+    })
+
+    element.addEventListener("click", function (){ // If you single click on the element it will strike through the element
+        element.style.textDecoration = "line-through";
+    })
+
+    input.value = ""; // It clears the text box after one entinty
+
+}
