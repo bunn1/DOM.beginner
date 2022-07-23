@@ -13,6 +13,7 @@ inp.addEventListener("keyup",function(event){
 })
 
 function addToDo(){
+
     let value = inp.value;
 
     if(value === "") // Checks if any string is not resent it will not print
@@ -25,14 +26,14 @@ function addToDo(){
 
     list.appendChild(element); // Appending at end
 
-    element.addEventListener("dbclick", function(){ // Dbclick - delete element
-        element.remove("list");
+    list.addEventListener("dbclick", function(){ // Dbclick - delete element
+        element.remove("li");
     })
 
     element.addEventListener("click", function (){ // If you single click on the element it will strike through the element
         element.style.textDecoration = "line-through";
     })
 
-    input.value = ""; // It clears the text box after one entinty
+    inp.value = ""; // It clears the text box after one entinty
 
 }
