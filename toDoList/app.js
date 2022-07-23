@@ -5,3 +5,9 @@ let list = document.getElementById("list"); //Getting value of unordered List
 
 but.addEventListener("click", addToDo) // Calls the addToDo() function by click on the Add Btn
 
+inp.addEventListener("keyup",function(event){
+    if(event.keyCode === 13)
+    {
+        addToDo();
+    }
+})
